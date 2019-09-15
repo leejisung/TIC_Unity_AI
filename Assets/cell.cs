@@ -33,6 +33,7 @@ public class cell : MonoBehaviour
                 game_manager.ARR[x, y] = 2;
                 game_manager.black_or_white = 1;
             }
+            GameObject.Find("game_manager").GetComponent<game_manager>().AI();
         }
     }
     void Update()
